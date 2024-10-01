@@ -1,0 +1,97 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cfa2d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#nao {
+    background-color: #f44336;
+}
+
+#nao:hover {
+    background-color: #e41e1e;
+}
+
+/* Estilo para a página de resposta */
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    color: #441663;
+}
+
+/* Coração animado */
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hearts::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url('coracao.png')  repeat;
+    opacity: 0.3;
+    animation: heartRain 10s linear infinite;
+    padding: 20px;
+}
+
+@keyframes heartRain {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(100%); }
+}
+
+.pergt{
+    background-color: azure;
+    padding: 30px 45px;
+    border-radius: 30px;
+    box-shadow: 10px 30px 40px 10px rgb(65, 63, 63);
+    
+}
